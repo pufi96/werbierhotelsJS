@@ -1,1 +1,1 @@
-# werbierhotelsJS
+# werbierhotels
