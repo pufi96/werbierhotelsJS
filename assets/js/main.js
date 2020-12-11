@@ -46,7 +46,6 @@ $( document ).ready(function() {
                                         <a href="${slicicaLink[i]}" class="btn zaobljen">${text[i]}</a>
                                     </div>`
             }
-            
         }
     }
     if(lokacija == "rooms.html"){
@@ -112,7 +111,6 @@ $( document ).ready(function() {
                                                             Room feature:
                                                         </p>
                                                         <div class="row" id="${imenaNizova[i]}">
-                                                        
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
@@ -153,8 +151,6 @@ $( document ).ready(function() {
                 var reImePrezime= /^([A-ZĐŽŠČĆ][a-zđžščć]{2,20})+$/ //najmanje 3 karaktera prvo slovo veliko a najvise 20
                 var reEmail = /^[a-z][\w\.]*\@[a-z0-9]{3,20}(\.[a-z]{3,5})?\.[a-z]{2,3}$/ //
                 var validator = 0;
-                
-                
                 //ime 
                 if(!reImePrezime.test(ime.value)){ 	        
                     ime.innerHTML = "";
@@ -169,7 +165,6 @@ $( document ).ready(function() {
                     ime.classList.remove("borderRed");
                     ime.nextElementSibling.classList.remove("textRed");
                 }
-                
                 //prezime
                 if(!reImePrezime.test(prezime.value)){  	        
                     prezime.innerHTML = "";
@@ -226,15 +221,11 @@ $( document ).ready(function() {
                 if(!validator){
                     window.alert("Expect confirmation of your email from our customer service.");
                 }
-            
-
         }
         function link(){
             let location = ["Documentation.txt", "assets/css/style.min.css", "sitemap.xml", "author.html"];
             let slicica = ["fas fa-file-alt", "fab fa-css3", "fas fa-sitemap", "fas fa-user"];
             let text = ["Document", "Css", "Sitemap", "Author"];
-            
-
             let ispis = document.getElementById("linkContent");
             for(let i = 0; i < slicica.length; i++){
                 ispis.innerHTML += `<div class="col-12 col-md-3 my-2">
@@ -313,7 +304,6 @@ $( document ).ready(function() {
                     </div>
                 </div>`
                 }
-                
             }
         }
     }
@@ -367,7 +357,6 @@ $( document ).ready(function() {
                                         </div>
                                     </div>`
                 }
-                
             }
         }
     }
@@ -425,7 +414,6 @@ $( document ).ready(function() {
                                                             </div>
                                                         </div>
                                                     </div>`
-            
                 }
                 else{
                     ispis.innerHTML = `<div class="col-12 d-flex justify-content-center align-items-center mask pattern-6" id="${idNaslov[i]}">
