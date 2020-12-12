@@ -1,4 +1,3 @@
-$("body").toTopButton();
 $( document ).ready(function() {
     header();
     menu();
