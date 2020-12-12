@@ -52,8 +52,8 @@ $( document ).ready(function() {
         document.getElementById("Rooms").classList.add("active");
         roomsContent();
         function roomsContent(){
-            let slikaSrc = ["cozy_room.jpg", "fabulous_room.jpg", "spectacular_room.jpg", "cool_suite.jpg", "fantastic_suite.jpg", "sunlime_suite.jpg", "wow_suite.jpg", "extreme_wow_suite.jpg", "cozy_mega_room.jpg", "spectacular_mega_room.jpg", "marvelous_room.jpg", "splendid_room.jpg"];
-            let slikaAlt = ["Cozy room", "Fabulous room", "Spectacular room", "Cool suite", "Fantastic suite", "Sublime suite", "wow suite", "Extreme WOW suite", "Cozy Mega Room", "Spectacular Mega Room", "Marvelous room", "Slendid room"]; // alt slike i ime modala
+            let pictureSrc = ["cozy_room.jpg", "fabulous_room.jpg", "spectacular_room.jpg", "cool_suite.jpg", "fantastic_suite.jpg", "sunlime_suite.jpg", "wow_suite.jpg", "extreme_wow_suite.jpg", "cozy_mega_room.jpg", "spectacular_mega_room.jpg", "marvelous_room.jpg", "splendid_room.jpg"];
+            let pictureAlt = ["Cozy room", "Fabulous room", "Spectacular room", "Cool suite", "Fantastic suite", "Sublime suite", "wow suite", "Extreme WOW suite", "Cozy Mega Room", "Spectacular Mega Room", "Marvelous room", "Slendid room"]; // alt slike i ime modala
             let fsizeNiz = ["Cozy", "Fabulous", "Spectacular", "Cool", "Fantastic", "Sublime", "WOW", "Extreme WOW", "Cozy Mega Family", "Spectacular Mega Family", "Marvelous", "Splendid"]; // Ime diva sobe
             let idNizModal = ["Cozy", "Fabulous", "Spectacular", "Cool", "Fantastic", "Sublime", "WOW", "Extreme_WOW", "Cozy_Mega", "Spectacular_Mega", "marvelous", "splendid"]; // id u modalu
             let cardText = ["Guest room, 1 King, No view, Fireplace, Balcony", "Guest room, 1 King, Mountain view, Fireplace, Balcony", "Guest room, 1 King, Best Valley view, Fireplace, Balcony", "Junior Suite, 1 King, Sofa bed, Mountain view, Top floor, Fireplace, Balcony", "Larger Suite, 1 King, Fireplace, Balcony", "Penthouse Suite, 1 King, Sofa bed, Mountain view, Top floor, Fireplace, Balcony", "2 Bedroom Suite, Bedroom 1: 1 King, Bedroom 2: 1 King, Sofa bed, Bathrooms: 2.5, Top floor", "2 Bedroom Presidential Suite, Best valley view, Top floor, Fireplace, Balcony", "Guest room, 1 King, No view, and 1 single bed, Fireplace, Balcony", "Guest room, 1 King, Best Valley view, and 1 single bed, Fireplace", "2 Bedroom Residence, Bedroom 1: 1 King, Bedroom 2: 1 King, Bathrooms: 2, Fireplace", "Guest room, 1 King, No view, Fireplace, Balcony"];
@@ -72,10 +72,10 @@ $( document ).ready(function() {
              splendid : ["Cozy modern chalet style", "Bed types: king bed", "Sleeps: 6 guests", "Three bedroom residence", "Bunk beds upon request (Select Residences)", "Furnished balcony with panoramic view", "Walk-in closet", "Fully Equipped Kitchen", "Two LCD TVs", "Breakfast bar", "Dining for Eight"]};
              imenaNizova = ["cozy", "fabulous", "spectacular", "cool", "fantastic", "sublime", "wow", "extremeWOW", "cozyMega", "spectacularMega", "marvelous", "splendid"];
             let ispis = document.getElementById("ispis");
-            for(let i = 0; i < slikaSrc.length; i++){
+            for(let i = 0; i < pictureSrc.length; i++){
                 ispis.innerHTML += `<div class= "col-12 col-sm-6 col-md-4 col-lg-3 my-2">
                                         <div class="card">
-                                            <img src="assets/img/${slikaSrc[i]}" class="card-img-top img-fluid potamni" alt="${slikaAlt[i]}">
+                                            <img src="assets/img/${pictureSrc[i]}" class="card-img-top img-fluid potamni" alt="${pictureAlt[i]}">
                                             <div class="card-body">
                                                 <p class="fsize text-center">
                                                     ${fsizeNiz[i]}
@@ -98,13 +98,13 @@ $( document ).ready(function() {
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="staticBackdropLabel">${slikaAlt[i]}</h5>
+                                                        <h5 class="modal-title" id="staticBackdropLabel">${pictureAlt[i]}</h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
                                                     </div>
                                                     <div class="modal-body">
-                                                            <img src="assets/img/${slikaSrc[i]}" class="card-img-top img-fluid" alt="${slikaAlt[i]}">
+                                                            <img src="assets/img/${pictureSrc[i]}" class="card-img-top img-fluid" alt="${pictureAlt[i]}">
                                                     </div>
                                                     <div class="modal-tekst text-center">
                                                         <p>
@@ -258,16 +258,16 @@ $( document ).ready(function() {
         document.getElementById("Winter").classList.add("active");
         winterContent();
         function winterContent(){
-            let slikaSrc = ["skiing.jpg", "snowboarding.jpg", "mountain.jpg", "heliskiing.jpg", "scenic_helikopter.jpg", "paragliding.jpg", "parachute_ski.jpg"];
-            let slikaAlt = ["skiing", "snowboarding", "mountain climbing", "heliskiing", "scenic helikopter", "paragliding", "parachute ski"];
+            let pictureSrc = ["skiing.jpg", "snowboarding.jpg", "mountain.jpg", "heliskiing.jpg", "scenic_helikopter.jpg", "paragliding.jpg", "parachute_ski.jpg"];
+            let pictureAlt = ["skiing", "snowboarding", "mountain climbing", "heliskiing", "scenic helikopter", "paragliding", "parachute ski"];
             let cardBody = ["Ski and Snowboard Lessons", "Off-Piste Coaching", "Mountain Guides", "Heli-Skiing", "Scenic Helicopter Flights", "Paragliding", "Parachute Jump"];
             let cardText = ["Which lesson is right for you can depend on a lot of factors. With small groups, they will experience the perfect balance between great fun and learning. Cancellations are not permitted; guests who miss a lesson will be charged the full lesson price.", "Ever wanted to learn how to ski powder? Verbier has some of the best off-piste terrain in the world! Enjoy your first experience with a fully qualified instructor to improve your freeride technique or just get away from the slopes  for a day.", "Go off the beaten track.  Experience ski touring and skiing on glacial terrain. Well, these are all options when you ski with a guide – from a one day experience to over-night trips in high mountain cabins, and of course Heli-skiing.", "Experience the adrenaline of a helicopter ride to one of the remote peaks around the Verbier ski area. Ski untouched powder and experience unrivalled descents. And if you haven’t had enough, you can fly back up and do it all again.", "Whether you ski or not, why not enjoy an amazing flight around the Valais area in a helicopter. Fly around the region’s signature mountains including Mont Blanc and the Matterhorn. You can even ski to the heli-pad at Croix de Coeur where your helicopter will pick you up.", "Take to the open skies on a paraglider solo or tandem. Thrill your senses, infuse your mind with pure adrenaline and escape your routine point of view with a paragliding flight in the Swiss Alps. The view is better from all the way up the mountains.", "For the ultimate buzz, take a parachute jump over the Alps. After being briefed by the ground crew, your instructor will make sure you’re fully prepared and comfortable before boarding the heli- copter. Following the stunning helicopter flight to your target altitude, the door opens… and you’re in free-fall over the Alps!"];
             let ispis = document.getElementById("winter");
-            for(let i = 0; i < slikaSrc.length; i++){
+            for(let i = 0; i < pictureSrc.length; i++){
                 if(i % 2 == 0){
                     ispis.innerHTML +=`<div class="row">
                     <div class="col-12 col-lg-6 my-4">
-                        <img src="assets/img/${slikaSrc[i]}" class="img-fluid zaobljen potamni" alt="${slikaAlt[i]}">
+                        <img src="assets/img/${pictureSrc[i]}" class="img-fluid zaobljen potamni" alt="${pictureAlt[i]}">
                     </div>
                     <div class="col-12 col-lg-6 my-4">
                         <div class="card zaobljen">
@@ -300,7 +300,7 @@ $( document ).ready(function() {
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 my-4">
-                        <img src="assets/img/${slikaSrc[i]}" class="img-fluid zaobljen potamni" alt="${slikaAlt[i]}">
+                        <img src="assets/img/${pictureSrc[i]}" class="img-fluid zaobljen potamni" alt="${pictureAlt[i]}">
                     </div>
                 </div>`
                 }
@@ -311,12 +311,12 @@ $( document ).ready(function() {
         document.getElementById("Summer").classList.add("active");
         summerContent();
         function summerContent(){
-            let slikaSrc = ["golf.jpg", "hiking.jpg", "biking.jpg", "heli_sightseeing.jpg", "paragliding.jpg", "bungee_jumping.jpg", "rock_climbing.jpg"];
-            let slikaAlt = ["golf", "hiking", "biking", "sightseeing helikopter", "paragliding", "bungee jumping", "rock climbing"];
+            let pictureSrc = ["golf.jpg", "hiking.jpg", "biking.jpg", "heli_sightseeing.jpg", "paragliding.jpg", "bungee_jumping.jpg", "rock_climbing.jpg"];
+            let pictureAlt = ["golf", "hiking", "biking", "sightseeing helikopter", "paragliding", "bungee jumping", "rock climbing"];
             let cardBody = ["Golf", "Hiking", "Biking", "Heli Sightseeing Tours", "Paragliding", "Bungee Jumping", "Rock Climbing"];
             let cardText = ["In Verbier, you can play on two golf courses, open from June to November. Accessible to golfers of all ages, the two golf courses complement each other and provide all the thrills expected by the little white ball aficionados.", "With 28 marked cross-country itineraries and infinite terrain, Verbier and Val de Bagnes offer some of the best hiking trails in Switzerland for all fitness levels. Get out and discover the natural surroundings, take in unbelievable views of green valleys, and breathe it all in. The air is fresh way up here.", "Whether you’re up for e-biking, road biking, MTB/mountain biking, cross-country or “Downhill” riding in the Verbier bike park – with 500 km of mountain bike trails and endless roads, there are so many options to explore.", "So many options including circling the local 4000m high peaks or a full tour from Mont Blanc to the Matterhorn.", "Take to the open skies on a paraglider solo or tandem. Paragliding is as accessible as it is intoxicating. Throughout the Summer, the grassy take-off slopes are covered with colourful wings. In Winter, take off with your skis on and admire the spectacular views over the snowy Alps.", "With a breathtaking view and high safety standards, Werber offers world’s most unique bungee jumping experience in the world.", "From beginner instruction to expert multi-pitch climbs, the Val de Bagnes is a climbing Mecca for all abilities."];
             let ispis = document.getElementById("summer");
-            for(let i = 0; i < slikaSrc.length; i++){
+            for(let i = 0; i < pictureSrc.length; i++){
                 if(i % 2 == 0){
                     ispis.innerHTML += `<div class="row okrenuto">
                                             <div class="col-12 col-lg-6 my-4">
@@ -332,14 +332,14 @@ $( document ).ready(function() {
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-6 my-4">
-                                                <img src="assets/img/${slikaSrc[i]}" class="img-fluid zaobljen potamni" alt="${slikaAlt[i]}">
+                                                <img src="assets/img/${pictureSrc[i]}" class="img-fluid zaobljen potamni" alt="${pictureAlt[i]}">
                                             </div>
                                         </div>`
                 }
                 else{
                 ispis.innerHTML += `<div class="row">
                                         <div class="col-12 col-lg-6 my-4">
-                                            <img src="assets/img/${slikaSrc[i]}" class="img-fluid zaobljen potamni" alt="${slikaAlt[i]}">
+                                            <img src="assets/img/${pictureSrc[i]}" class="img-fluid zaobljen potamni" alt="${pictureAlt[i]}">
                                         </div>
                                         <div class="col-12 col-lg-6 my-4">
                                             <div class="card zaobljen">
@@ -360,16 +360,29 @@ $( document ).ready(function() {
             }
         }
     }
+    
     if(lokacija == "index.html"){
         document.getElementById("Home").classList.add("active");
+        slider();
+        function slider() {
+            setInterval(function(){
+                let ispis = document.getElementById("slider");
+                if(ispis.innerHTML == `<img src="assets/img/hotel_slider_first.jpg" class="d-block w-100" alt="mountains with hotel"/>`) {
+                    ispis.innerHTML = `<img src="assets/img/hotel_slider_second.jpg" class="d-block w-100" alt="hotel valley"/>`;
+                } 
+                else {
+                    ispis.innerHTML = `<img src="assets/img/hotel_slider_first.jpg" class="d-block w-100" alt="mountains with hotel"/>`;
+                }
+            }, 2500);
+        }
         indexContent();
         function indexContent(){
-                let slikaSrcF = ["two_bedroom.jpg", "beach.jpg", "parachute_ski.jpg"];
-                let slikaAltF = ["two bed room", "beach", "ski parachute"];
-                let slikaSrcS = ["single_room.jpg", "summer_hotel_front.jpg",  "skiing.jpg"];
-                let slikaAltS = ["single bed room", "summer hotel front", "skiing"];
-                let slikaSrcT = ["secound_single_room.jpg", "summer_hotel_back.jpg", "snowboarding.jpg"];
-                let slikaAltT = ["secound single bed room", "summer hotel back", "snowboarding"];
+                let pictureSrcF = ["two_bedroom.jpg", "beach.jpg", "parachute_ski.jpg"];
+                let pictureAltF = ["two bed room", "beach", "ski parachute"];
+                let pictureSrcS = ["single_room.jpg", "summer_hotel_front.jpg",  "skiing.jpg"];
+                let pictureAltS = ["single bed room", "summer hotel front", "skiing"];
+                let pictureSrcT = ["secound_single_room.jpg", "summer_hotel_back.jpg", "snowboarding.jpg"];
+                let pictureAltT = ["secound single bed room", "summer hotel back", "snowboarding"];
                 let link = ["rooms.html", "summer.html", "winter.html"];
                 let idNaslov = ["room_view", "summer_view", "night_view"];
                 let naslov = ["DARING DESIGN MEETS A SOPHISTICATED SCENE", "DETOX. RETOX. REPEAT AT THE BEACH", "A PERFECT SPORT FOR THRILL-SEEKERS"];
@@ -402,15 +415,15 @@ $( document ).ready(function() {
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 col-md-6 my-2">
-                                                                <img src="assets/img/${slikaSrcF[i]}" class="img-fluid zaobljen potamni" alt="${slikaAltF[i]}">
+                                                                <img src="assets/img/${pictureSrcF[i]}" class="img-fluid zaobljen potamni" alt="${pictureAltF[i]}">
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col12 col-md-6 my-2">
-                                                                <img src="assets/img/${slikaSrcS[i]}" class="img-fluid zaobljen potamni" alt="${slikaAltS[i]}">
+                                                                <img src="assets/img/${pictureSrcS[i]}" class="img-fluid zaobljen potamni" alt="${pictureAltS[i]}">
                                                             </div>
                                                             <div class="col12 col-md-6 my-2">
-                                                                <img src="assets/img/${slikaSrcT[i]}" class="img-fluid zaobljen potamni" alt="${slikaAltT[i]}">
+                                                                <img src="assets/img/${pictureSrcT[i]}" class="img-fluid zaobljen potamni" alt="${pictureAltT[i]}">
                                                             </div>
                                                         </div>
                                                     </div>`
@@ -426,7 +439,7 @@ $( document ).ready(function() {
                                         <div class="container my-5 home">
                                             <div class="row okrenuto">
                                                 <div class="col-12 col-md-6 my-4">
-                                                    <img src="assets/img/${slikaSrcF[i]}" class="img-fluid zaobljen potamni" alt="${slikaAltF[i]}">
+                                                    <img src="assets/img/${pictureSrcF[i]}" class="img-fluid zaobljen potamni" alt="${pictureAltF[i]}">
                                                 </div>
                                                 <div class="col-12 col-md-6 my-auto">
                                                     <div class="h2 text-center">
@@ -444,10 +457,10 @@ $( document ).ready(function() {
                                             </div>
                                             <div class="row mb-5">
                                                 <div class="col12 col-md-6 my-2">
-                                                    <img src="assets/img/${slikaSrcS[i]}" class="img-fluid zaobljen potamni" alt="${slikaAltS[i]}">
+                                                    <img src="assets/img/${pictureSrcS[i]}" class="img-fluid zaobljen potamni" alt="${pictureAltS[i]}">
                                                 </div>
                                                 <div class="col12 col-md-6 my-2">
-                                                    <img src="assets/img/${slikaSrcT[i]}" class="img-fluid zaobljen potamni" alt="${slikaAltT[i]}">
+                                                    <img src="assets/img/${pictureSrcT[i]}" class="img-fluid zaobljen potamni" alt="${pictureAltT[i]}">
                                                 </div>
                                             </div>
                                         </div>`
