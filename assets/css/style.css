@@ -241,7 +241,15 @@ footer a:hover {
   text-align: center;
   text-transform: uppercase;
 }
-
+.borderRed{
+  border: 1px solid #dc3545 !important;
+}
+.textRed{
+  color: #dc3545;
+}
+.active{
+  color: #ba9c53;
+}
 #contact_view {
   background-image: url(../img/contact.jpg);
   background-attachment: fixed;
@@ -407,13 +415,3 @@ textarea {
     height: 450px !important;
   }
 }
-.borderRed{
-  border: 1px solid #dc3545 !important;
-}
-.textRed{
-  color: #dc3545;
-}
-.active{
-  color: #ba9c53;
-}
-/*# sourceMappingURL=style.css.map */
