@@ -224,7 +224,7 @@ $( document ).ready(function() {
         }
         function link(){
             let location = ["Documentation.pdf", "assets/js/main.js", "sitemap.xml", "author.html"];
-            let slicica = ["fas fa-file-alt", "fab fa-css3", "fas fa-sitemap", "fas fa-user"];
+            let slicica = ["fas fa-file-alt", "fab fa-js-square", "fas fa-sitemap", "fas fa-user"];
             let text = ["Document", "JS", "Sitemap", "Author"];
             let ispis = document.getElementById("linkContent");
             for(let i = 0; i < slicica.length; i++){
