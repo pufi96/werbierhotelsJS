@@ -1,3 +1,4 @@
+$("body").toTopButton();
 $( document ).ready(function() {
     header();
     menu();
@@ -223,9 +224,9 @@ $( document ).ready(function() {
                 }
         }
         function link(){
-            let location = ["Documentation.txt", "assets/css/style.min.css", "sitemap.xml", "author.html"];
+            let location = ["Documentation.pdf", "assets/js/main.js", "sitemap.xml", "author.html"];
             let slicica = ["fas fa-file-alt", "fab fa-css3", "fas fa-sitemap", "fas fa-user"];
-            let text = ["Document", "Css", "Sitemap", "Author"];
+            let text = ["Document", "JS", "Sitemap", "Author"];
             let ispis = document.getElementById("linkContent");
             for(let i = 0; i < slicica.length; i++){
                 ispis.innerHTML += `<div class="col-12 col-md-3 my-2">
