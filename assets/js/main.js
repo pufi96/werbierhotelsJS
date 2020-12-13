@@ -19,6 +19,43 @@ $( document ).ready(function() {
         }
     }
     function menu(){
+        // menu logo
+        let nav = document.querySelector("nav");
+        nav.classList.add("navbar", "navbar-expand-md", "sticky-top");
+        let elementDiv1 = document.createElement("div");
+        elementDiv1.classList.add("col-4", "text-right");
+        nav.appendChild(elementDiv1);
+        let elementA = document.createElement("a");
+        elementA.classList.add("navbar-brand");
+        elementA.setAttribute("href", "index.html");
+        elementDiv1.appendChild(elementA);
+        let elementImg = document.createElement("img");
+        elementImg.setAttribute("src", "assets/img/logo.png");
+        elementImg.setAttribute("alt", "Werbier Logo");
+        elementA.appendChild(elementImg);
+        // hamburger button 
+        let elementButton = document.createElement("button");
+        elementButton.setAttribute("class", "navbar-toggler");
+        elementButton.setAttribute("type", "button");
+        elementButton.setAttribute("data-toggle", "collapse");
+        elementButton.setAttribute("data-target", "#collapsibleNavbar");
+        nav.appendChild(elementButton);
+        let elementSpan = document.createElement("span");
+        elementSpan.className = "navbar-toggler-icon";
+        elementButton.appendChild(elementSpan);
+        let elementI = document.createElement("i");
+        elementI.classList.add("fas", "fa-bars");
+        elementSpan.appendChild(elementI);
+        // menu list
+        let elementDiv2 = document.createElement("div");
+        elementDiv2.classList.add("col", "collapse", "navbar-collapse", "justify-content-center");
+        elementDiv2.id = "collapsibleNavbar";
+        nav.appendChild(elementDiv2);
+        let elementUl = document.createElement("ul");
+        elementUl.className = "navbar-nav";
+        elementUl.id = "menu";
+        elementDiv2.appendChild(elementUl);
+        // ul list
         let href = ["index.html", "rooms.html", "summer.html", "winter.html", "contact.html"];
         let name = ["Home", "Rooms", "Summer", "Winter" , "Contact"];
         var meni = document.getElementById("menu");
@@ -389,7 +426,6 @@ $( document ).ready(function() {
                 let podNaslov = ["DISCOVER ALPINE GLAMOUR REDEFINE", "Switzerland is a fabulous summer destination to uncover", "Hit the slopes form your hotel in Switzerland"];
                 let text = ["The property features 123 stylish guest rooms, suites and residences, each with fireplace, bed and private balcony. The design is daring, local materials like wood and stone are fused with modern accent in a Werbier Hotels’ style to create spaces that are spectacular to look at and divine to dream in.", "Active sport enthusiasts, beach fans and music lovers will not miss the hot summer program taking place from mid-June until the end of September. The Beach is the center–stage for thrill–seeking mountain enthusiasts and a hot spot to detox, retox and repeat.", "Action packed days mirror energy fueled nightsat this stunning Werbier ski resort, with ski in/ski out access. Perched at 1531 meters, just steps away from the main Werbier ski lifts, Werbier is open all year round and offers immediate access to more than 400 kilometers of ski, biking and hiking terrain."];
             let ispis = document.getElementById("home");
-            console.log(naslov.length)
             for (let i = 0; i < naslov.length; i++) {
                 if(!i % 2 == 0){
                 ispis.innerHTML +=`<div class="col-12 d-flex justify-content-center align-items-center mask pattern-6" id="${idNaslov[i]}">
