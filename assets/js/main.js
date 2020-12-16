@@ -403,7 +403,7 @@ $( document ).ready(function() {
         slider();
         
         const checkSlider = document.getElementById("slider").getAttribute("src");
-        console.log(checkSlider);
+        console.log("slider picture change:");
         function slider() {
             setInterval(function(){
                 let ispis = document.getElementById("slider");
