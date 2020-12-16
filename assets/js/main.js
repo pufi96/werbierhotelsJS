@@ -409,9 +409,11 @@ $( document ).ready(function() {
                 console.log(ispis);
                 if(checkSlider == ispis.getAttribute("src")) {
                     ispis.setAttribute("src", "assets/img/hotel_slider_second.jpg");
+                    ispis.setAttribute("alt", "hotel valley");
                 } 
                 else{
                     ispis.setAttribute("src", "assets/img/hotel_slider_first.jpg");
+                    ispis.setAttribute("alt", "mountains with hotel");
                 }
             }, 2500);
         }
