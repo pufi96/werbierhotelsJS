@@ -401,7 +401,6 @@ $( document ).ready(function() {
     if(lokacija == "index.html"){
         document.getElementById("Home").classList.add("active");
         slider();
-        
         const checkSlider = document.getElementById("slider").getAttribute("src");
         console.log("slider picture change:");
         function slider() {
