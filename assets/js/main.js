@@ -401,14 +401,18 @@ $( document ).ready(function() {
     if(lokacija == "index.html"){
         document.getElementById("Home").classList.add("active");
         slider();
+        
+        const checkSlider = document.getElementById("slider").getAttribute("src");
+        console.log(checkSlider);
         function slider() {
             setInterval(function(){
                 let ispis = document.getElementById("slider");
-                if(ispis.innerHTML == `<img src="assets/img/hotel_slider_first.jpg" class="d-block w-100" alt="mountains with hotel"/>`) {
-                    ispis.innerHTML = `<img src="assets/img/hotel_slider_second.jpg" class="d-block w-100" alt="hotel valley"/>`;
+                console.log(ispis);
+                if(checkSlider == ispis.getAttribute("src")) {
+                    ispis.setAttribute("src", "assets/img/hotel_slider_second.jpg");
                 } 
-                else {
-                    ispis.innerHTML = `<img src="assets/img/hotel_slider_first.jpg" class="d-block w-100" alt="mountains with hotel"/>`;
+                else{
+                    ispis.setAttribute("src", "assets/img/hotel_slider_first.jpg");
                 }
             }, 2500);
         }
