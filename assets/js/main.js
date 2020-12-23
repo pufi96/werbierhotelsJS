@@ -90,9 +90,9 @@ $( document ).ready(function() {
         roomsContent();
         function roomsContent(){
             let pictureSrc = ["cozy_room.jpg", "fabulous_room.jpg", "spectacular_room.jpg", "cool_suite.jpg", "fantastic_suite.jpg", "sunlime_suite.jpg", "wow_suite.jpg", "extreme_wow_suite.jpg", "cozy_mega_room.jpg", "spectacular_mega_room.jpg", "marvelous_room.jpg", "splendid_room.jpg"];
-            let pictureAlt = ["Cozy room", "Fabulous room", "Spectacular room", "Cool suite", "Fantastic suite", "Sublime suite", "wow suite", "Extreme WOW suite", "Cozy Mega Room", "Spectacular Mega Room", "Marvelous room", "Slendid room"]; // alt slike i ime modala
+            let pictureAlt = ["Cozy room", "Fabulous room", "Spectacular room", "Cool suite", "Fantastic suite", "Sublime suite", "wow suite", "Extreme WOW suite", "Cozy Mega Room", "Spectacular Mega Room", "Marvelous room", "Splendid room"]; // alt slike i ime modala
             let fsizeNiz = ["Cozy", "Fabulous", "Spectacular", "Cool", "Fantastic", "Sublime", "WOW", "Extreme WOW", "Cozy Mega Family", "Spectacular Mega Family", "Marvelous", "Splendid"]; // Ime diva sobe
-            let idNizModal = ["Cozy", "Fabulous", "Spectacular", "Cool", "Fantastic", "Sublime", "WOW", "Extreme_WOW", "Cozy_Mega", "Spectacular_Mega", "marvelous", "splendid"]; // id u modalu
+            let idNizModal = ["Cozy", "Fabulous", "Spectacular", "Cool", "Fantastic", "Sublime", "WOW", "Extreme_WOW", "Cozy_Mega", "Spectacular_Mega", "Marvelous", "Splendid"]; // id u modalu
             let cardText = ["Guest room, 1 King, No view, Fireplace, Balcony", "Guest room, 1 King, Mountain view, Fireplace, Balcony", "Guest room, 1 King, Best Valley view, Fireplace, Balcony", "Junior Suite, 1 King, Sofa bed, Mountain view, Top floor, Fireplace, Balcony", "Larger Suite, 1 King, Fireplace, Balcony", "Penthouse Suite, 1 King, Sofa bed, Mountain view, Top floor, Fireplace, Balcony", "2 Bedroom Suite, Bedroom 1: 1 King, Bedroom 2: 1 King, Sofa bed, Bathrooms: 2.5, Top floor", "2 Bedroom Presidential Suite, Best valley view, Top floor, Fireplace, Balcony", "Guest room, 1 King, No view, and 1 single bed, Fireplace, Balcony", "Guest room, 1 King, Best Valley view, and 1 single bed, Fireplace", "2 Bedroom Residence, Bedroom 1: 1 King, Bedroom 2: 1 King, Bathrooms: 2, Fireplace", "Guest room, 1 King, No view, Fireplace, Balcony"];
             const nizoviSoba = {
              cozy : ["Cozy modern chalet style", "Bed types: king bed, 2 twin beds", "Sleeps: 2 guests", "WiFi", "20 rooms", "Balcony", "Walk-in closet", "Separate WC", "Breakfast"],
@@ -125,7 +125,7 @@ $( document ).ready(function() {
                                             </div>
                                             <div class="card-body d-flex align-items-end justify-content-center">
                                                 <div class="btn pozadina text-center">
-                                                    <button type="button" class="btn card-link blink" data-toggle="modal" data-target="#Cozy">
+                                                    <button type="button" class="btn card-link blink" data-toggle="modal" data-target="#${idNizModal[i]}">
                                                         More info
                                                     </button>
                                                 </div>
