@@ -178,7 +178,6 @@ $( document ).ready(function() {
         children();
         document.getElementById("btnProvera").addEventListener("click", forma);
         function forma(){ 
-                console.log("124");
                 var ime = document.getElementById("fname");
                 var prezime = document.getElementById("lname");
                 var email = document.getElementById("email"); 
@@ -253,6 +252,12 @@ $( document ).ready(function() {
                     departue.nextElementSibling.innerHTML = '';
                     departue.classList.remove("borderRed");
                     departue.nextElementSibling.classList.remove("textRed");
+                }
+                if(arrival.value > departue.value){
+                    departue.nextElementSibling.innerHTML = 'Please select departue time bigger then arrival.';
+                    departue.classList.add("borderRed");
+                    departue.nextElementSibling.classList.add("textRed");
+                    validator++;
                 }
                 console.log(validator);
                 if(!validator){
@@ -397,7 +402,6 @@ $( document ).ready(function() {
             }
         }
     }
-    
     if(lokacija == "index.html"){
         document.getElementById("Home").classList.add("active");
         slider();
